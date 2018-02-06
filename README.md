@@ -3,7 +3,7 @@
 
 This script takes a text file input and by a specified delimiter (ex: ‘.’ and ‘\n’) sends the text to Google Cloud Translate API, stores translated text in memory and after the text file has been completed assembles the translated text file into an output file.
 
-[Tqdm](https://pypi.python.org/pypi/tqdm) is being used to display progress of the translation job.
+[Tqdm](https://pypi.python.org/pypi/tqdm) is used to display the progress of the translation job.
 
 Before attempting this aware of the following:
 - [5000 characters per request limit for the Translate API](https://cloud.google.com/translate/faq)
