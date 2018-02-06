@@ -31,4 +31,5 @@ $ python3 translate-client.py book.txt book-translated-2.txt
 Input Text Loop: |####------| 415/1029  40% [elapsed: 08:09 left: 12:04,  0.85 iters/sec]
 ```
 
+
 Special thanks to [Ashish](https://github.com/AshuIX) for assisting with the code.
