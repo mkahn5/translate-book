@@ -1,13 +1,13 @@
 # Translate a book with Google Cloud Translate API 
 ## Overview:
 
-This script takes a text file input and by a specified delimiter (ex: ‘.’ and ‘\n’), sends the text to Google Cloud Translate API, stores translated text in memory and after the text file has been completed assembles the translated text file into an output file.
+This script takes a text file input and by a specified delimiter (ex: ‘.’ and ‘\n’) sends the text to Google Cloud Translate API, stores translated text in memory and after the text file has been completed assembles the translated text file into an output file.
 
 [Tqdm](https://pypi.python.org/pypi/tqdm) is being used to display progress of the translation job.
 
 Before attempting this aware of the following:
-5000 characters per request limit for the Translate API
-Service quotas per user/day for Translate API within Google Cloud Platform quotas.
+- [5000 characters per request limit for the Translate API](https://cloud.google.com/translate/faq)
+- [Service quotas per user/day for Translate API within Google Cloud Platform quotas](https://cloud.google.com/translate/quotas)
 
 ## Requirements:
 
@@ -17,10 +17,10 @@ Service quotas per user/day for Translate API within Google Cloud Platform quota
 
 ## Configure your environment:
 
-Download [service account credentials][service-account], rename .json file to creds.json in same folder as translate-book.py.
+Download [service account credentials][service-account] and rename project-name-xxxxxx.json file to creds.json in same folder as translate-client.py.
 [service-account]: (https://console.cloud.google.com/apis/credentials?project=_)
 
-'sudo python -m pip install google-cloud --ignore-installed'
+`sudo python -m pip install google-cloud --ignore-installed`
 
 
 ## To run:
