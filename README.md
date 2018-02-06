@@ -24,7 +24,7 @@ Download [service account credentials](https://console.cloud.google.com/apis/cre
 
 
 ## To run:
-`python3 translate-client.py input.txt outout.txt`
+`python3 translate-client.py input.txt output.txt`
 
 `$ python3 translate-client.py book.txt book-translated-2.txt
 Input Text Loop: |####------| 415/1029  40% [elapsed: 08:09 left: 12:04,  0.85 iters/sec]`
