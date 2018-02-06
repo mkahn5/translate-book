@@ -4,10 +4,6 @@ import time
 import argparse
 from google.cloud import translate
 
-
-__github__ = 'https://github.com/AshuIX'
-
-
 #####progress bar start #####
 def format_interval(t):
     mins, s = divmod(int(t), 60)

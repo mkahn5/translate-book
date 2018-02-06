@@ -17,8 +17,7 @@ Before attempting this aware of the following:
 
 ## Configure your environment:
 
-Download [service account credentials][service-account] and rename project-name-xxxxxx.json file to creds.json in same folder as translate-client.py.
-[service-account]: (https://console.cloud.google.com/apis/credentials?project=_)
+Download [service account credentials](https://console.cloud.google.com/apis/credentials?project=_) and rename project-name-xxxxxx.json file to creds.json in same folder as translate-client.py.
 
 `sudo python -m pip install google-cloud --ignore-installed`
 
