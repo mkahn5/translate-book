@@ -14,7 +14,7 @@ Before attempting this aware of the following:
 - Python3
 - Google cloud pip package
 - Google Cloud Platform [Service Account](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) key in json
-- Input file must be in .txt
+- Input file must be in .txt, so if your source is in pdf you'll need to convert
 
 ## Configure your environment:
 
