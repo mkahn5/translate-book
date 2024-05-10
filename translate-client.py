@@ -2,7 +2,7 @@ import os
 import sys
 import time
 import argparse
-from google.cloud import translate
+from google.cloud import translate_v2 as translate
 
 #####progress bar start #####
 def format_interval(t):
