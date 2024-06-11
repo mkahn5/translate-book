@@ -2,7 +2,7 @@ import os
 import sys
 import time
 import argparse
-from google.cloud import translate
+from google.cloud import translate_v2 as translate
 
 #####progress bar start #####
 def format_interval(t):
@@ -112,10 +112,14 @@ if __name__ == '__main__':
     translated = list()
     # call load_file function with the input_file to get the list of sentences (splitted on \n)
     # put it in tqdm (to show the progress, and for each d in the result
+    
+    # Enter target language here
+    targetLanguage = "mn"
+
     for d in tqdm(load_file(args.input_file), desc='Input Text Loop'):
         # try to append the result of the translation of d to the translated list
         try:
-            translated.append(translate_client.translate(d, target_language='en')['translatedText'])
+            translated.append(translate_client.translate(d, target_language=targetLanguage)['translatedText'])
         # if it fails
         except Exception as e:
             # create empty _temp list
@@ -125,8 +129,9 @@ if __name__ == '__main__':
                 # try
                 try:
                     # append the result of the translation of _d to the _tmp list
-                    _tmp.append(translate_client.translate(_d, target_language='en')['translatedText'])
-                except:
+                    _tmp.append(translate_client.translate(_d, target_language=targetLanguage)['translatedText'])
+                except Exception as e:
+                    print("error: ", e)
                     continue
             # join the results with .and append to the translated list
             translated.append('.'.join(_tmp))

@@ -22,6 +22,7 @@ Download [service account credentials](https://console.cloud.google.com/apis/cre
 
 `sudo python -m pip install google-cloud --ignore-installed`
 
+[Language Codes](https://cloud.google.com/translate/docs/languages)
 
 ## To run:
 `python3 translate-client.py input.txt output.txt`
